@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empty project</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+    <svg class="svg svg-rect">
+        <rect class="rect" x="100" y="76" width="200" height="150" fill="#aabbcc" rx="20">
+
+        </rect>
+    </svg>
+    <svg class="svg svg-circle" >
+        <circle r="100" fill="#ccccaa" cx="50%" cy="50%" stroke-dasharray="20 40 10 50" stroke-width="0" stroke="#ff0000"></circle>
+    </svg>
+    <svg class="svg">
+        <ellipse rx="180" ry="100" fill="#55aa11" cx="50%" cy="50%"></ellipse>
+    </svg>
+    <svg class="svg">
+        <polygon points="50,50 350,50, 200,250, 200,100" fill="silver" stroke="brown" stroke-width="6" stroke-dasharray="50" stroke-dashoffset="26"></polygon>
+    </svg>
+    <svg class="svg">
+        <line x1="50" y1="50" x2="350" y2="250" stroke="black"></line>
+    </svg>
+    <svg class="svg">
+        <polyline points="50,50 50,150, 150,150, 250,50" fill="none" stroke="orange" stroke-width="10"></polyline>
+    </svg>
+    <svg class="svg-text">
+        <path id="textPath" d="M1 92C26 40 83 -23.4 111 39C139 101.4 200 31.3334 227 1.00003" stroke="black" fill="none"
+              stroke-width="5"/>
+        <text>
+            <textPath href="#textPath">
+                Random text is here and again and again until the end
+            </textPath>
+        </text>
+    </svg>
+</div>
+<script type="module" src="index.js"></script>
+</body>
+</html>

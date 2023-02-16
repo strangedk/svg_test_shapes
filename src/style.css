@@ -1,0 +1,51 @@
+body {
+    padding: 50px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.svg {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.svg-text {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    padding-top: 20px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.text {
+    fill: black;
+}
+
+.rect {
+    stroke: saddlebrown;
+    stroke-width: 10;
+    fill: none;
+    stroke-dasharray: 80;
+    stroke-dashoffset: 100;
+    transition: all 1s ease-in-out;
+}
+
+.svg-rect:hover .rect {
+    stroke-dashoffset: 0;
+}
+
+.svg-circle circle {
+    transition: all 1s ease-in-out;
+}
+
+.svg-circle:hover circle {
+    stroke-width: 100;
+    stroke-dashoffset: 100;
+}
